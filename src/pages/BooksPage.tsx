@@ -15,9 +15,11 @@ import { Link } from 'react-router-dom';
 
 const BooksPage = () => {
   const imageStyle = {
-    width: '600px',
-    height: '400px',
+    width: '100%',
+    height: 'auto',
+    maxWidth: '600px',
   };
+
 
   return (
     <section className="text-gray-600 body-font">
@@ -37,7 +39,7 @@ const BooksPage = () => {
 
           ].map((book, index) => (
             <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-400  rounded overflow-hidden">
+              <a className="block relative h-400   rounded overflow-hidden">
                 <img
                   alt="ecommerce"
                   className="object-cover object-center w-full h-full block border border-blue-500"
