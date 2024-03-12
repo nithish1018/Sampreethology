@@ -20,7 +20,7 @@ const HomePage = () => {
                     <span className='text-xl font-semibold'> Indian author hailing from Mahabubnagar, Telangana</span>
                     <p className="mb-8 leading-relaxed pt-2 mt-2">
                         Transitioning from a teaching role to a prolific writer, Sampreeth has captivated readers with his heartfelt Telugu poetry, compelling short stories, and diverse literary works. With a portfolio spanning over 10 books, encompassing genres from poetry to historical fiction, Sampreeth’s dedication to storytelling reflects his profound connection to his cultural roots and his unwavering commitment to sharing narratives that resonate with readers worldwide.
-
+                       <Link to={"/authorInfo"}><span className='text-blue-500 cursor-pointer'>...Read more</span> </Link>
                     </p>
                     <div className="flex justify-center">
                         <Link to={"books"}>

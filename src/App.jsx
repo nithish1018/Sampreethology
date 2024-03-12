@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import BooksPage from './pages/BooksPage';
 import QuotesPage from './pages/QuotesPage';
 import ContactPage from './pages/ContactPage';
+import AuthorInfo from './pages/AuthorInfo';
 
 const App = () => (
   <Router>
@@ -15,6 +16,8 @@ const App = () => (
         <Route path="books" element={<BooksPage />} />
         <Route path="quotes" element={<QuotesPage />} />
         <Route path="contact" element={<ContactPage />} />
+        <Route path="authorInfo" element={<AuthorInfo />} />
+
 
       </Route>
     </Routes>

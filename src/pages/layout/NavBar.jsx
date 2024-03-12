@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '../../assets/Logo/logo.png';
 import { Link } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 
 function NavBar() {
     const [selectedLink, setSelectedLink] = useState(null);
@@ -13,9 +14,9 @@ function NavBar() {
         <header className="text-gray-600 body-font">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <Link to={"/"}>
-                    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        <img src={Logo} alt="Logo" className="w-20" />
-                        <span className="ml-3 text-xl">Sampreethology</span>
+                    <a className="flex title-font  font-medium items-center text-gray-900 mb-4 md:mb-0">
+                        <img src={Logo} alt="Logo" className="w-28" />
+                        <span className="ml-3 text-2xl pb-3 font-semibold font-sans">Sampreethology</span>
                     </a>
                 </Link>
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -41,7 +42,7 @@ function NavBar() {
                             className={`mr-5 hover:text-gray-900 ${selectedLink === 'third' ? 'text-gray-900 text-xl bg-gray-300 rounded px-2' : ''}`}
                             onClick={() => handleLinkClick('third')}
                         >
-                            Quotes
+                            Telugu Quotes
                         </a>
                     </Link>
 
@@ -53,6 +54,7 @@ function NavBar() {
                             Contact
                         </a>
                     </Link>
+                  
                 </nav>
             </div>
         </header>
