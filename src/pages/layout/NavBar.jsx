@@ -11,7 +11,7 @@ function NavBar() {
     };
 
     return (
-        <header className="text-gray-600 body-font">
+        <header className="text-gray-600 body-font bg-gray-300 rounded">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <Link to={"/"}>
                     <a className="flex title-font  font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -22,7 +22,7 @@ function NavBar() {
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                     <Link to={"/"}>
                         <a
-                            className={`mr-5 hover:text-gray-900 ${selectedLink === 'first' ? 'text-gray-900 text-xl bg-gray-300 rounded px-2' : ''}`}
+                            className={`mr-5 text-xl hover:text-gray-900 ${selectedLink === 'first' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
                             onClick={() => handleLinkClick('first')}
                         >
                             Home
@@ -30,7 +30,7 @@ function NavBar() {
                     </Link>
                     <Link to={"books"}>
                         <a
-                            className={`mr-5 hover:text-gray-900 ${selectedLink === 'second' ? 'text-gray-900 text-xl bg-gray-300 rounded px-2' : ''}`}
+                            className={`mr-5 text-xl hover:text-gray-900 ${selectedLink === 'second' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
                             onClick={() => handleLinkClick('second')}
                         >
                             Books
@@ -39,7 +39,7 @@ function NavBar() {
 
                     <Link to={"quotes"}>
                         <a
-                            className={`mr-5 hover:text-gray-900 ${selectedLink === 'third' ? 'text-gray-900 text-xl bg-gray-300 rounded px-2' : ''}`}
+                            className={`mr-5 text-xl hover:text-gray-900 ${selectedLink === 'third' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
                             onClick={() => handleLinkClick('third')}
                         >
                             Telugu Quotes
@@ -48,13 +48,13 @@ function NavBar() {
 
                     <Link to={"contact"}>
                         <a
-                            className={`mr-5 hover:text-gray-900 ${selectedLink === 'fourth' ? 'text-gray-900 text-xl bg-gray-300 rounded px-2' : ''}`}
+                            className={`mr-5 text-xl hover:text-gray-900 ${selectedLink === 'fourth' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
                             onClick={() => handleLinkClick('fourth')}
                         >
                             Contact
                         </a>
                     </Link>
-                  
+
                 </nav>
             </div>
         </header>
