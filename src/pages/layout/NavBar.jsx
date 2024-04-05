@@ -18,47 +18,47 @@ function NavBar() {
 
 
     return (
-        <header className="text-gray-600 body-font bg-gray-300 rounded">
-            <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <header className="text-gray-600 body-font h-[150px] bg-gray-300 rounded">
+            <div className="container mx-auto flex flex-wrap  flex-col md:flex-row items-center">
                 <Link to={"/"}>
-                    <a className="flex title-font  font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        <img src={Logo} alt="Logo" className="w-28" />
-                        <span className="ml-3 text-2xl pb-3 font-semibold font-sans">Sampreethology</span>
+                    <a className="flex title-font  font-medium items-center text-gray-900  md:mb-0">
+                        <img src={Logo} alt="Logo" className="w-36 h-auto" />
+                        <span className="ml-3 text-5xl pb-3 roboto-slab-heading  mb-3">SAMPREETHOLOGY</span>
                     </a>
                 </Link>
-                <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center roboto-mono-navelements">
                     <Link to={"/"}>
                         <a
-                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === '' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
+                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === '' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2' : ''}`}
                             onClick={() => handleLinkClick('')}
                         >
-                            Home
+                            HOME
                         </a>
                     </Link>
                     <Link to={"books"}>
                         <a
-                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === 'books' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
+                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === 'books' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2' : ''}`}
                             onClick={() => handleLinkClick('books')}
                         >
-                            Books
+                            BOOKS
                         </a>
                     </Link>
 
                     <Link to={"quotes"}>
                         <a
-                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === 'quotes' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
+                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === 'quotes' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2' : ''}`}
                             onClick={() => handleLinkClick('quotes')}
                         >
-                            Telugu Quotes
+                            TELUGU_QUOTES
                         </a>
                     </Link>
 
                     <Link to={"contact"}>
                         <a
-                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === 'contact' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
+                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === 'contact' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2' : ''}`}
                             onClick={() => handleLinkClick('contact')}
                         >
-                            Contact
+                            CONTACT
                         </a>
                     </Link>
 
