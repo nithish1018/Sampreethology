@@ -1,14 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../../assets/Logo/logo.png';
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 
 function NavBar() {
-    const [selectedLink, setSelectedLink] = useState(null);
-
     const handleLinkClick = (link) => {
-        setSelectedLink(link);
+        setCurrentPath(link);
     };
+    const [currentPath, setCurrentPath] = useState('');
+
+    useEffect(() => {
+        // Extracting the value after the last slash in the pathname
+        const pathParts = window.location.pathname.split('/');
+        const value = pathParts[pathParts.length - 1];
+        setCurrentPath(value);
+    }, []);
+
 
     return (
         <header className="text-gray-600 body-font bg-gray-300 rounded">
@@ -22,16 +29,16 @@ function NavBar() {
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                     <Link to={"/"}>
                         <a
-                            className={`mr-5 text-xl hover:text-gray-900 ${selectedLink === 'first' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
-                            onClick={() => handleLinkClick('first')}
+                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === '' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
+                            onClick={() => handleLinkClick('')}
                         >
                             Home
                         </a>
                     </Link>
                     <Link to={"books"}>
                         <a
-                            className={`mr-5 text-xl hover:text-gray-900 ${selectedLink === 'second' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
-                            onClick={() => handleLinkClick('second')}
+                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === 'books' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
+                            onClick={() => handleLinkClick('books')}
                         >
                             Books
                         </a>
@@ -39,8 +46,8 @@ function NavBar() {
 
                     <Link to={"quotes"}>
                         <a
-                            className={`mr-5 text-xl hover:text-gray-900 ${selectedLink === 'third' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
-                            onClick={() => handleLinkClick('third')}
+                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === 'quotes' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
+                            onClick={() => handleLinkClick('quotes')}
                         >
                             Telugu Quotes
                         </a>
@@ -48,8 +55,8 @@ function NavBar() {
 
                     <Link to={"contact"}>
                         <a
-                            className={`mr-5 text-xl hover:text-gray-900 ${selectedLink === 'fourth' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
-                            onClick={() => handleLinkClick('fourth')}
+                            className={`mr-5 text-xl hover:text-gray-900 ${currentPath === 'contact' ? 'text-gray-900 text-2xl bg-gray-300 rounded px-2' : ''}`}
+                            onClick={() => handleLinkClick('contact')}
                         >
                             Contact
                         </a>
