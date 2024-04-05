@@ -34,48 +34,41 @@ const QuotesPage = () => {
 
     return (
         <>
-            <section className="">
-                <div className=" text-xl font-bold mb-3"> Life Quotes</div>
-                <div className="border-4 px-2 shadow-md border-spacing-2 border-gray-500">
-                    <div className="grid grid-cols-4 gap-4">
-                        {lifeImageList.map((image, index) => (
-                            <div key={index} className="relative">
-                                <img src={image.default} className="w-full h-auto" alt={`image-${index}`} />
-                                <a href={image.default} download={`image-${index}`} className="absolute bottom-2 right-2 text-gray-500 text-2xl  hover:text-gray-800">
-                                    <BsDownload />
-                                </a>
-                            </div>
-                        ))}
-                    </div>
+            <section className="px-4 md:px-8 lg:px-16 xl:px-20">
+                <div className="text-xl font-bold mb-3"> Life Quotes</div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {lifeImageList.map((image, index) => (
+                        <div key={index} className="relative">
+                            <img src={image.default} className="w-full h-auto" alt={`image-${index}`} />
+                            <a href={image.default} download={`image-${index}`} className="absolute bottom-2 right-2 text-gray-500 text-2xl hover:text-gray-800">
+                                <BsDownload />
+                            </a>
+                        </div>
+                    ))}
                 </div>
-                <div className="  text-xl font-semibold pt-3 mt-3 mb-3 ">Love Quotes</div>
-                <div className="border-4 px-2 shadow-md border-spacing-2 border-gray-500">
-                    <div className="grid grid-cols-4 gap-4">
-                        {loveImageList.map((image, index) => (
-                            <div key={index} className="relative">
-                                <img src={image.default} className="w-full h-auto" alt={`image-${index}`} />
-                                <a href={image.default} download={`image-${index}`} className="absolute bottom-2 right-2 text-gray-500 text-2xl  hover:text-gray-800">
-                                    <BsDownload />
-                                </a>
-                            </div>
-                        ))}
-                    </div>
+                <div className="text-xl font-semibold pt-3 mt-3 mb-3">Love Quotes</div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {loveImageList.map((image, index) => (
+                        <div key={index} className="relative">
+                            <img src={image.default} className="w-full h-auto" alt={`image-${index}`} />
+                            <a href={image.default} download={`image-${index}`} className="absolute bottom-2 right-2 text-gray-500 text-2xl hover:text-gray-800">
+                                <BsDownload />
+                            </a>
+                        </div>
+                    ))}
                 </div>
-
-                <div className="  text-xl font-semibold pt-3 mt-3 mb-3 ">Tenglish Quotes</div>
-                <div className="border-4 px-2 shadow-md border-spacing-2 border-gray-500">
-                    <div className="grid grid-cols-4 gap-4">
-                        {tenglishImageList.map((image, index) => (
-                            <div key={index} className="relative">
-                                <img src={image.default} className="w-full h-auto" alt={`image-${index}`} />
-                                <a href={image.default} download={`image-${index}`} className="absolute bottom-2 right-2 text-gray-500 text-2xl  hover:text-gray-800">
-                                    <BsDownload />
-                                </a>
-                            </div>
-                        ))}
-                    </div>
+                <div className="text-xl font-semibold pt-3 mt-3 mb-3">Tenglish Quotes</div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {tenglishImageList.map((image, index) => (
+                        <div key={index} className="relative">
+                            <img src={image.default} className="w-full h-auto" alt={`image-${index}`} />
+                            <a href={image.default} download={`image-${index}`} className="absolute bottom-2 right-2 text-gray-500 text-2xl hover:text-gray-800">
+                                <BsDownload />
+                            </a>
+                        </div>
+                    ))}
                 </div>
-            </section >
+            </section>
         </>
     );
 };
