@@ -24,13 +24,13 @@ const HomePage = () => {
                     </p>
                     <div className="flex justify-center">
                         <a href='/books'>
-                            <button className="inline-flex text-white gap-2 pt-2 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg animate-pulse">
+                            <button className="inline-flex  gap-2 pt-2 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-bold text-white animate-pulse">
                                 Explore Books
                                 <i className="pi  pi-book mt-2 " style={{ fontSize: '1rem' }} ></i>
                             </button>
                         </a>
                         <a href='/quotes'>
-                            <button className="ml-4 inline-flex text-gray-700 gap-2 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg animate-pulse">
+                            <button className="ml-4 inline-flex  gap-2 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg font-bold text-black animate-pulse">
                                 Explore Quotes
                                 <i className="pi  pi-sparkles pt-1 mt-1 pi-spin " style={{ fontSize: '1rem' }} ></i>
 

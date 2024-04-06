@@ -9,7 +9,7 @@
 .roboto-slab-home {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 900;
   font-style: italic;
 }
 
@@ -18,7 +18,6 @@
   background-size: cover;
   background-position: center;
   opacity: 0.8
-    /* Adjust the opacity value as desired */
 }
 
 body {
@@ -42,20 +41,8 @@ body::before {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
-  /* Adjust opacity here */
   z-index: -1;
-  /* Ensure the overlay is behind content */
 }
-
-/* Your existing styles can go below */
-
-
-/* Your existing styles can go below */
-
-
-
-
-
 
 .roboto-mono-navelements {
   font-family: "Roboto Mono", monospace;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../../assets/Logo/logo.png';
 import { Link } from "react-router-dom";
-import { useParams } from 'react-router-dom';
+import nameLogo from '../../assets/Logo/name-logo.png'
 
 function NavBar() {
     const handleLinkClick = (link) => {
@@ -18,18 +18,18 @@ function NavBar() {
     }, []);
 
     return (
-        <header className="body-font bg-white rounded">
+        <header className="body-font  bg-black rounded">
             <div className="container mx-auto flex flex-wrap items-center justify-between py-2 px-2 md:px-0">
                 <Link to={"/"} onClick={() => handleLinkClick('')} >
                     <div className="flex items-center">
                         <img src={Logo} alt="Logo" onClick={() => handleLinkClick('')} className="w-10 h-auto md:w-24 md:h-auto" />
-                        <span className="ml-2 pb-1 text-lg md:text-4xl roboto-slab-heading">SAMPREETHOLOGY</span>
+                        <span className="ml-2 pb-1 text-lg md:text-4xl text-white roboto-slab-heading ">SAMPREETHOLOGY</span>
                     </div>
                 </Link>
                 <nav className="md:flex md:items-center md:space-x-4 mt-2 md:mt-0">
                     <Link to={"/"}>
                         <a
-                            className={`text-base md:text-lg hover:text-gray-900 ${currentPath === '' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2 py-1' : 'text-gray-700 px-2 pr-2'}`}
+                            className={`text-base md:text-lg hover:text-white ${currentPath === '' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2 py-1' : 'text-blue-200 px-2 pr-2'}`}
                             onClick={() => handleLinkClick('')}
                         >
                             HOME
@@ -37,7 +37,7 @@ function NavBar() {
                     </Link>
                     <Link to={"books"}>
                         <a
-                            className={`text-base md:text-lg hover:text-gray-900 ${currentPath === 'books' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2 py-1' : 'text-gray-700 px-2'}`}
+                            className={`text-base md:text-lg  font-semibold hover:text-white ${currentPath === 'books' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2 py-1' : 'text-blue-200 px-2'}`}
                             onClick={() => handleLinkClick('books')}
                         >
                             BOOKS
@@ -45,7 +45,7 @@ function NavBar() {
                     </Link>
                     <Link to={"quotes"}>
                         <a
-                            className={`text-base md:text-lg hover:text-gray-900 ${currentPath === 'quotes' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2 py-1' : 'text-gray-700 px-2'}`}
+                            className={`text-base md:text-lg  font-semibold hover:text-white ${currentPath === 'quotes' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2 py-1' : 'text-blue-200 px-2'}`}
                             onClick={() => handleLinkClick('quotes')}
                         >
                             TELUGU_QUOTES
@@ -53,7 +53,7 @@ function NavBar() {
                     </Link>
                     <Link to={"contact"}>
                         <a
-                            className={`text-base md:text-lg hover:text-gray-900 ${currentPath === 'contact' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2 py-1' : 'text-gray-700 px-2'}`}
+                            className={`text-base md:text-lg  font-semibold hover:text-white ${currentPath === 'contact' ? 'text-gray-900 font-bold bg-gray-300 rounded px-2 py-1' : 'text-blue-200 px-2'}`}
                             onClick={() => handleLinkClick('contact')}
                         >
                             CONTACT
