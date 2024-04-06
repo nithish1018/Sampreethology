@@ -13,15 +13,16 @@ function NavBar() {
         // Extracting the value after the last slash in the pathname
         const pathParts = window.location.pathname.split('/');
         const value = pathParts[pathParts.length - 1];
+        console.log(value)
         setCurrentPath(value);
     }, []);
 
     return (
-        <header className="body-font bg-gray-300 rounded">
+        <header className="body-font bg-white rounded">
             <div className="container mx-auto flex flex-wrap items-center justify-between py-2 px-2 md:px-0">
-                <Link to={"/"}>
+                <Link to={"/"} onClick={() => handleLinkClick('')} >
                     <div className="flex items-center">
-                        <img src={Logo} alt="Logo" className="w-10 h-auto md:w-24 md:h-auto" />
+                        <img src={Logo} alt="Logo" onClick={() => handleLinkClick('')} className="w-10 h-auto md:w-24 md:h-auto" />
                         <span className="ml-2 pb-1 text-lg md:text-4xl roboto-slab-heading">SAMPREETHOLOGY</span>
                     </div>
                 </Link>

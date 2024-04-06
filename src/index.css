@@ -1,20 +1,69 @@
 /* Define a unique and descriptive class name */
 .roboto-slab-heading {
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-  }
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.roboto-slab-home {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.homepage-background {
+  background-image: url("./assets/Background/img.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8
+    /* Adjust the opacity value as desired */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/Background/img.png");
+  background-size: cover;
+  background-position: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Adjust opacity here */
+  z-index: -1;
+  /* Ensure the overlay is behind content */
+}
+
+/* Your existing styles can go below */
+
+
+/* Your existing styles can go below */
+
+
+
 
 
 
 .roboto-mono-navelements {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
-  font-weight:400;
+  font-weight: 400;
   font-style: normal;
 }
-  
+
 
 @tailwind base;
 @tailwind components;

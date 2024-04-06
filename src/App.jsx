@@ -7,6 +7,7 @@ import BooksPage from './pages/BooksPage';
 import QuotesPage from './pages/QuotesPage';
 import ContactPage from './pages/ContactPage';
 import AuthorInfo from './pages/AuthorInfo';
+import 'primeicons/primeicons.css';
 
 const App = () => (
   <Router>
