@@ -1,6 +1,5 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { alert } from '@material-tailwind/react';
 
 const ContactPage = () => {
 
