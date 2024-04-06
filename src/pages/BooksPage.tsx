@@ -9,6 +9,8 @@ import img7 from "../assets/coverImages/img7.jpg";
 import img8 from "../assets/coverImages/img8.jpg";
 import img9 from "../assets/coverImages/img9.jpg";
 import img10 from "../assets/coverImages/img10.jpg";
+import img11 from "../assets/coverImages/img11.jpg";
+
 import { Link } from 'react-router-dom';
 
 
@@ -26,16 +28,18 @@ const BooksPage = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {[
-            { img: img1, title: 'Pichi Geethalu', price: 'https://amzn.eu/d/gfsRFZJ' },
+            { img: img1, title: 'Marani Manushula Kathalu', price: 'https://amzn.eu/d/1Gx3gtX' },
             { img: img2, title: 'Samudhram Dachina Keratalu', price: 'https://amzn.eu/d/3tTcJUE' },
-            { img: img3, title: 'Chandama Kathalu', price: 'https://store.pothi.com/book/sampreeth-shivaiah-neeli-%E0%B0%9A%E0%B0%82%E0%B0%A6%E0%B0%AE%E0%B0%BE%E0%B0%AE%E0%B0%B2-%E0%B0%95%E0%B0%A5%E0%B0%B2%E0%B1%81/' },
-            { img: img4, title: 'Marani Manushula Kathalu', price: 'https://amzn.eu/d/1Gx3gtX' },
-            { img: img5, title: 'Chinukulu', price: 'https://notionpress.com/read/chinukulu' },
-            { img: img6, title: 'Upgrades Of Papaya', price: 'https://notionpress.com/read/upgrades-of-papaya-fruit-value-addition' },
-            { img: img7, title: 'The Story Of Thirsty', price: 'https://notionpress.com/read/the-story-of-thirsty' },
-            { img: img8, title: '22 Methods To Irrigate A Crop', price: 'https://amzn.eu/d/3aKWr3M' },
-            { img: img9, title: 'Vedant Inevitable', price: 'https://amzn.eu/d/gRQcphf' },
-            { img: img10, title: 'Vedanth Anitarasadhyam', price: 'https://amzn.eu/d/df6zTEc' },
+            { img: img3, title: 'Picchi Geethalu', price: 'https://blueroseone.com/store/product/picchi-geethalu' },
+            { img: img4, title: 'Vedanth Anitara Sadhyam', price: 'https://amzn.eu/d/df6zTEc' },
+            { img: img5, title: 'Vedant Inevitable', price: 'https://amzn.eu/d/gRQcphf' },
+            { img: img6, title: 'The Story Of Thirsty', price: 'https://notionpress.com/read/the-story-of-thirsty' },
+            { img: img7, title: 'Upgrades Of Papaya', price: 'https://notionpress.com/read/upgrades-of-papaya-fruit-value-addition' },
+            { img: img8, title: 'Adventure Of Teddy', price: 'https://notionpress.com/read/adventures-of-teddy' },
+            { img: img9, title: 'Chinukulu', price: 'https://notionpress.com/read/chinukulu' },
+            { img: img10, title: 'Chandamamala Kathalu', price: 'https://store.pothi.com/book/sampreeth-shivaiah-neeli-%E0%B0%9A%E0%B0%82%E0%B0%A6%E0%B0%AE%E0%B0%BE%E0%B0%AE%E0%B0%B2-%E0%B0%95%E0%B0%A5%E0%B0%B2%E0%B1%81/' },
+            { img: img11, title: '22 Methods To Irrigate A Crop', price: 'https://amzn.eu/d/3aKWr3M' },
+
 
           ].map((book, index) => (
             <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
