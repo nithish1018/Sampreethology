@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import { toast } from "react-toastify";
 
 const ContactPage = () => {
 
@@ -17,11 +18,17 @@ const ContactPage = () => {
         emailjs.sendForm("service_hlko0g5", "template_ra7ptam", e.target, "dPWAdB7hKakh1mGKm")
             .then((result) => {
                 console.log(result.text);
+                if (result) {
+                    toast.success("Email Sent Successfully", { theme: "dark", autoClose: 1000 });
+                }
 
 
             }, (error) => {
+                toast.error("Failed, Please Try Again!", { theme: "dark", autoClose: 1000 });
+
                 console.log(error.text);
             });
+
     };
 
     return (
