@@ -1,9 +1,11 @@
 import React from 'react';
 import author from "../assets/AuthorImage/author_new.jpg";
-import "../index.css"; // Import your CSS file where body styles are defined
+import "../index.css";
+import NewBookModal from './NewBookModal';
 
 const HomePage = () => {
     return (
+        <>
         <section className="text-gray-600 body-font">
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -40,6 +42,8 @@ const HomePage = () => {
                 </div>
             </div>
         </section>
+        <NewBookModal/>
+        </>
     );
 };
 
