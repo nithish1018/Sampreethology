@@ -26,7 +26,9 @@ function NewBookModal() {
             <Modal blockScrollOnMount={true} isOpen={isOpen} size={"lg"} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader>New Book Just Released</ModalHeader>
+                    <ModalHeader>
+                        <div className="animate-pulse text-2xl font-bold">New Book Just Released</div>
+                    </ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
                         <div>
@@ -42,7 +44,7 @@ function NewBookModal() {
 
                     <ModalFooter>
 
-                        <Link className=" flex bg-red-300 rounded-xl h-10 w-full justify-center items-center text-white animate-pulse" to={'http://bit.ly/4b6FBRg'}>Get Book Product Page</Link>
+                        <Link className=" flex bg-red-300 rounded-xl h-10 w-full justify-center items-center text-white animate-pulse" to={'https://play.google.com/store/books/details?id=zPQIEQAAQBAJ'}>Get Book Product Page</Link>
                     </ModalFooter>
                 </ModalContent>
             </Modal>

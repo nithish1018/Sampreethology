@@ -10,6 +10,7 @@ import img8 from "../assets/coverImages/img8.jpg";
 import img9 from "../assets/coverImages/img9.jpg";
 import img10 from "../assets/coverImages/img10.jpg";
 import img11 from "../assets/coverImages/img11.jpg";
+import newbook from "../assets/coverImages/newbook.jpg";
 
 import { Link } from 'react-router-dom';
 
@@ -28,6 +29,7 @@ const BooksPage = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {[
+            { img: newbook, title: 'Marani Manushula Kathalu', price: 'https://play.google.com/store/books/details?id=zPQIEQAAQBAJ' }, 
             { img: img1, title: 'Marani Manushula Kathalu', price: 'https://amzn.eu/d/1Gx3gtX' },
             { img: img2, title: 'Samudhram Dachina Keratalu', price: 'https://amzn.eu/d/3tTcJUE' },
             { img: img3, title: 'Picchi Geethalu', price: 'https://blueroseone.com/store/product/picchi-geethalu' },
