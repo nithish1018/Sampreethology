@@ -44,7 +44,7 @@ function NewBookModal() {
 
                     <ModalFooter>
 
-                        <Link className=" flex bg-red-300 rounded-xl h-10 w-full justify-center items-center text-white animate-pulse" to={'https://play.google.com/store/books/details?id=zPQIEQAAQBAJ'}>Get Book Product Page</Link>
+                        <Link className=" flex bg-red-300 rounded-xl h-10 w-full justify-center items-center text-white animate-pulse" to={'https://amzn.in/d/6vKocUX'}>Get Book Product Page</Link>
                     </ModalFooter>
                 </ModalContent>
             </Modal>
