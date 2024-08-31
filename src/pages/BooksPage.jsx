@@ -29,7 +29,7 @@ const BooksPage = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {[
-            { img: newbook, title: 'Mahabhoomi Mahakavyam', price: 'https://play.google.com/store/books/details?id=zPQIEQAAQBAJ' },
+            { img: newbook, title: 'Mahabhoomi Mahakavyam', price: 'https://amzn.in/d/6vKocUX' },
             { img: img1, title: 'Marani Manushula Kathalu', price: 'https://amzn.eu/d/1Gx3gtX' },
             { img: img2, title: 'Samudhram Dachina Keratalu', price: 'https://amzn.eu/d/3tTcJUE' },
             { img: img3, title: 'Picchi Geethalu', price: 'https://blueroseone.com/store/product/picchi-geethalu' },
@@ -54,8 +54,8 @@ const BooksPage = () => {
                 />
               </a>
               <div className="mt-4">
-                <h3 className="text-black font-medium text-xs tracking-widest title-font mb-1 ">BOOK</h3>
-                <h2 className="text-white title-font text-lg font-medium">{book.title}</h2>
+                {/* <h3 className="text-black font-medium text-xs tracking-widest title-font mb-1 ">BOOK</h3> */}
+                <h2 className="text-black font-medium text-sm tracking-widest title-font mb-1">{book.title}</h2>
                 <Link to={book.price}>
                   <div className='flex flex-row items-center gap-2 w-full '>
                     <div className="bg-green-200 flex flex-row gap-2 rounded px-2 ">
